@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot (23).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark menu" onclick="closemenu()"></i>   
+                </ul>
+                <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'am <span>Samkit</span> jain<br> from india</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- abour section -->
+    <div id="about">
+        <div class="container">
+          <div class="row">
+             <div class="about-col-1">
+              <img src="images/blurredforcol.png">
+
+              </div>
+              <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>Hello! I'm Samkit , a pre-final year student passionate about technology, particularly Artificial Intelligence and Machine Learning. My academic journey in CSE with specialization in Artificial Intelligence and Machine Learning at Laxmi narayan college fo technology has equipped me with a strong foundation, and my enthusiasm for AI and ML drives me to explore innovative solutions to real-world problems. Through coursework, projects, and internships, I've gained hands-on experience and continuously seek to expand my knowledge in these dynamic fields. I actively participate in tech communities and events to stay inspired and connected with like-minded individuals.</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('projects')">projects</p>
+                <p class="tab-links" onclick="opentab('education')">education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                  <li><span>Web Development</span><br>web app Development</li>
+                  <li><span>Machine Learning</span><br>Building ML models</li>
+                  
+                </ul>
+               </div> 
+               <div class="tab-contents" id="projects">
+                <ul>
+                  <li><span>Portfolio || frontend</span><br>created Portfolio website html,css and javascript</li>
+                  <li><span>Deep fake detection || Machine learning</span><br>Using ResNext and LSTM created a model that can detect deep fake videos</li>
+                  <li><span>Recuritor management systme || fullstack </span><br>used react for frontend,django for backend</li>
+                  
+                </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021-2025</span><br>B-tech(7.8cgpa) from Lakshmi Narayana College of Technology,Bhopal</li>
+                  <li><span>2020-2021</span><br>12th(82%) from Anand Vihar School, Bhopal</li>
+                  <li><span>2018-2019</span><br>10th(93.2%) from Anand Vihar School, Bhopal</li>
+                  
+                </ul>
+              </div>    
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ----services--- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-titles">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code "></i>
+            <h2>web Design</h2>
+            <p>I specialize in crafting visually appealing and user-friendly websites tailored to your specific needs. From modern layouts to intuitive navigation, I ensure your online presence reflects your brand identity and captivates your audience. Let me bring your vision to life on the digital canvas, creating an immersive experience that sets you apart in the online landscape.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop "></i>
+            <h2>UI/UX Design</h2>
+            <p>Elevate your digital products with intuitive and visually engaging user interfaces.I focus on every detail to ensure your product not only looks great but also delivers an exceptional user journey. Let's collaborate to transform your ideas into captivating digital experiences that resonate with your audience.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Custom Machine Learning Model Development</h2>
+            <p>Tap into the power of data-driven insights with personalized machine learning solutions. From predictive analytics to tailored recommendations, I specialize in creating custom models to address your specific business needs. </p>
+            <a href="#">Learn more</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ <!-- ----porfolio---- -->
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-titles">My work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./images/work-1.png">
+        <div class="layer">
+          <h3>Social media app</h3>
+          <p>The app connects you to the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-2.png">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>The app connects you to the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-3.png">
+        <div class="layer">
+          <h3>Online shopping app</h3>
+          <p>The app connects you to the talented people around the world.
+            Download it from play store.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+
+  </div>
+ </div>
+ <!-- ------contact---- -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+        <p><i class="fa-regular fa-paper-plane"></i>jainsamkit2134@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+91-6260556319</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/samkit-jain-b1b84822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/samkit.jain.50746"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://x.com/jainsamkit2134?t=USK4BkCUcsDm2rh6uQjtWQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="./images/Samkit Jain Resume.pdf" download  class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form class="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">submit</button>
+        </form>
+        <span id="msg"></span>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <P>copyright ©Samkit. Made with <i class="fa-solid fa-heart"></i></P>
+    </div>
+  </div>
+ </div>
+
+
+    <script>
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks)
+        {
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); <!-- means on whichever about tab we will click it will send that name to tabname -->
+      }
+    </script>
+    <script>
+      var sidemenu=document.getElementById("sidemenu")
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzwe8Pt80aUZNYPsH7BM4cAN8rh7-oqC1OR1gQooMHpumvHEIXjfNJu_pU-DXPL1PfD/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML= "message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=" "
+            }, 5000);
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+  </body>
+</html>
